@@ -5,7 +5,7 @@ y funciona en tres ambientes: desarrollo, pruebas y produccion.
 
 ## Integrantes
 
-Proyecto realizado por: Maria Daniela, Juan Pablo y Santiago Andres
+Proyecto realizado por: Maria Daniela Solis Prado, Juan Pablo Chavarro Triana y Santiago Andres Melo Diaz
 
 ## Instalacion
 
