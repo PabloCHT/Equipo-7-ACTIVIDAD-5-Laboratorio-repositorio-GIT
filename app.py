@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import sqlite3
 import config
+import re
 
 app = Flask(__name__)
 
@@ -42,18 +43,19 @@ def guardar(nombre, correo, asunto, mensaje):
 
 def validar(nombre, correo, asunto, mensaje):
     errores = []
+    patron_correo = r"^[^@\s]+@[^@\s]+\.[^@\s]+$"
+
     if nombre == "":
         errores.append("El nombre es obligatorio.")
     if correo == "":
         errores.append("El correo es obligatorio.")
-    elif "@" not in correo:
+    elif not re.match(patron_correo, correo):
         errores.append("El correo no tiene un formato valido.")
     if asunto == "":
         errores.append("Debe elegir un asunto.")
     if mensaje == "":
         errores.append("El mensaje es obligatorio.")
     return errores
-
 
 @app.route("/")
 def inicio():
