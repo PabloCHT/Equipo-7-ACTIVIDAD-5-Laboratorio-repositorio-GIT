@@ -3,6 +3,10 @@
 Aplicacion web sencilla hecha con Flask y SQLite. Registra mensajes de contacto
 y funciona en tres ambientes: desarrollo, pruebas y produccion.
 
+## Integrantes
+
+Proyecto realizado por: Maria Daniela, Juan Pablo y Santiago Andres
+
 ## Instalacion
 
     py -m pip install -r requirements.txt
